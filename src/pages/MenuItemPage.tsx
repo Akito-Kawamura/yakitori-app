@@ -10,9 +10,9 @@ const menu = [
 ];
 
 const MenuItemPage: React.FC = () => {
-  let { id } =  useParams<{ id: string } >();
+  let { id } =  useParams<{ id?: string } >();
   
-  if (!id) {
+  if (id===undefined) {
 	return <div> Invalid ID.</div>;
   }
 

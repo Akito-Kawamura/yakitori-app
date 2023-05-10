@@ -1,20 +1,18 @@
-// src/Routes.tsx
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MenuPage from "./pages/MenuPage";
 import MenuItemPage from "./pages/MenuItemPage";
 
-const Routes: React.FC = () => {
+function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/menu" component={MenuPage} />
-        <Route path="/menu/:id" component={MenuItemPage} />
-      </Switch>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/menu/:id" element={<MenuItemPage />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
-export default Routes;
+export default App;
