@@ -16,7 +16,7 @@ const MenuItemPage: React.FC = () => {
 	return <div> Invalid ID.</div>;
   }
 
-  const item = menu.find((item) => item.id === parseInt(id));
+  const item = menu.find((item) => item.id === parseInt(id? id: ""));
 
   if (!item) {
     return <div>Menu item not found.</div>;
