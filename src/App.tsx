@@ -2,14 +2,16 @@
 import React from "react";
 import Routes from "./Routes";
 import Navbar from "./components/Navbar";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
       <Routes />
-    </div>
+    </Router>
   );
 };
+
 
 export default App;
