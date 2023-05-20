@@ -5,6 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
+    publicPath: "/dist/",
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
@@ -18,11 +19,16 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    static: path.join(__dirname, 'public'), // ← 'contentBase' の代わりに 'static' を使用します
     compress: true,
-    port: 9000,
-  },
+    port: 3000,
+    hot: true
+  }
 };
