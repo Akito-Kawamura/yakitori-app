@@ -1,5 +1,5 @@
 // src/components/MenuItem.tsx
-import React from "react";
+import React from 'react';
 
 interface MenuItemProps {
   name: string;

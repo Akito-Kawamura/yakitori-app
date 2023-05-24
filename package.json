@@ -23,7 +23,9 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +52,10 @@
     "@babel/preset-typescript": "^7.21.5",
     "babel-loader": "^8.3.0",
     "css-loader": "^6.7.4",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
     "style-loader": "^3.3.3",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1"

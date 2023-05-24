@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
-    publicPath: "/dist/",
+    publicPath: '/dist/',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
@@ -29,6 +29,6 @@ module.exports = {
     static: path.join(__dirname, 'public'), // ← 'contentBase' の代わりに 'static' を使用します
     compress: true,
     port: 3000,
-    hot: true
-  }
+    hot: true,
+  },
 };

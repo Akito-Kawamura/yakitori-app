@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import MenuPage from "./pages/MenuPage";
-import MenuItemPage from "./pages/MenuItemPage";
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import MenuPage from './pages/MenuPage';
+import MenuItemPage from './pages/MenuItemPage';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 // src/pages/MenuPage.tsx
-import React from "react";
-import MenuList from "../components/MenuList";
+import React from 'react';
+import MenuList from '../components/MenuList';
 
 const MenuPage: React.FC = () => {
   return (

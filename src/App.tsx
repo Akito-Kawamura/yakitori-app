@@ -1,8 +1,8 @@
 // src/App.tsx
-import React from "react";
-import Routes from "./Routes";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
+import Routes from './Routes';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +12,5 @@ const App: React.FC = () => {
     </Router>
   );
 };
-
 
 export default App;
